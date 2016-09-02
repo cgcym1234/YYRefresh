@@ -22,6 +22,7 @@
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     [self addRefresh];
+    [self.scrollView.yy_topRefresh beginRefresh];
 }
 
 - (void)viewDidLayoutSubviews {
