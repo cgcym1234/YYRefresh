@@ -18,8 +18,8 @@
 
 - (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position action:(void (^)(YYRefresh *refresh))actionHandler;
 
-- (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position action:(void (^)(YYRefresh *refresh))actionHandler config:(YYRefreshConfig *)config;
+- (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position config:(YYRefreshConfig *)config action:(void (^)(YYRefresh *refresh))actionHandler;
 
-- (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position action:(void (^)(YYRefresh *refresh))actionHandler config:(YYRefreshConfig *)config customView:(UIView<YYRefreshView> *)refreshView;
+- (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position config:(YYRefreshConfig *)config customView:(UIView<YYRefreshView> *)refreshView action:(void (^)(YYRefresh *refresh))actionHandler;
 
 @end

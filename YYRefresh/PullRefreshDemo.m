@@ -38,12 +38,12 @@
     config.textIdle = @"下拉返回商品详情";
     config.textReady = @"释放返回商品详情";
     
-    [self.scrollView addYYRefreshAtPosition:YYRefreshPositionTop action:^(YYRefresh *refresh) {
+    [self.scrollView addYYRefreshAtPosition:YYRefreshPositionTop config:config action:^(YYRefresh *refresh) {
         NSLog(@"YYRefreshPositionTop");
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [refresh endRefresh];
         });
-    } config:config];
+    }];
      
     [self.scrollView addYYRefreshAtPosition:YYRefreshPositionBottom action:^(YYRefresh *refresh) {
         NSLog(@"YYPullRefreshPositionBottom");

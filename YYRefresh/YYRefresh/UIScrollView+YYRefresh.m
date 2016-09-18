@@ -45,15 +45,15 @@ static char kRightRefreash;
 }
 
 - (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position action:(void (^)(YYRefresh *refresh))actionHandler {
-    return [self addYYRefreshAtPosition:position action:actionHandler config:nil];
+    return [self addYYRefreshAtPosition:position config:nil action:actionHandler ];
 }
 
-- (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position action:(void (^)(YYRefresh *refresh))actionHandler config:(YYRefreshConfig *)config {
-    return [self addYYRefreshAtPosition:position action:actionHandler config:nil customView:nil];
+- (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position config:(YYRefreshConfig *)config action:(void (^)(YYRefresh *refresh))actionHandler {
+    return [self addYYRefreshAtPosition:position config:config customView:nil action:actionHandler];
 }
 
-- (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position action:(void (^)(YYRefresh *refresh))actionHandler config:(YYRefreshConfig *)config customView:(UIView<YYRefreshView> *)refreshView {
-    YYRefresh *refresh = [[YYRefresh alloc] initWithScrollView:self position:position action:actionHandler config:config customView:nil];
+- (YYRefresh *)addYYRefreshAtPosition:(YYRefreshPosition)position config:(YYRefreshConfig *)config customView:(UIView<YYRefreshView> *)refreshView action:(void (^)(YYRefresh *refresh))actionHandler {
+    YYRefresh *refresh = [[YYRefresh alloc] initWithScrollView:self position:position action:actionHandler config:config customView:refreshView];
     [self addSubview:refresh];
     switch (position) {
         case YYRefreshPositionTop: {

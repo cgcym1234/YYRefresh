@@ -21,6 +21,8 @@
 @property (nonatomic, assign) CGFloat animationDurationFast;//default 0.25
 @property (nonatomic, assign) CGFloat animationDurationSlow;//default  0.4
 
+@property (nonatomic, assign) BOOL parkVisible; //正在刷新时，是否显示悬停状态 default YES
+
 + (instancetype)defaultConfig;
 
 @end

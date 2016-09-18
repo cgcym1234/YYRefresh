@@ -50,7 +50,7 @@
 - (void)setContext {
     [self addSubview:_refreshView];
     [_refreshView showWithState:YYRefreshStateIdle config:_config animated:NO];
-//    self.backgroundColor = [UIColor orangeColor];
+    //    self.backgroundColor = [UIColor orangeColor];
 }
 
 #pragma mark - Override
@@ -96,7 +96,7 @@
 - (void)updateLocation {
     CGFloat x = 0;
     CGFloat y = 0;
-    CGFloat width = CGRectGetWidth(_scrollView.bounds);
+    CGFloat width = MIN(CGRectGetWidth(_scrollView.bounds), CGRectGetWidth([UIScreen mainScreen].bounds));
     switch (_position) {
         case YYRefreshPositionTop: {
             y = -YYRefreshViewHeight;
@@ -129,7 +129,7 @@
     if (_position == YYRefreshPositionLeft || _position == YYRefreshPositionRight) {
         //如果直接设置anchorPoint，view的frame会改变
         [self setAnchorPoint:CGPointMake(0, 0) forView:self];
-        self.transform = CGAffineTransformRotate(self.transform, DegreesToRadians(90.1));
+        self.transform = CGAffineTransformRotate(self.transform, DegreesToRadians(90));
     }
 }
 
@@ -197,21 +197,32 @@
 - (void)beginRefresh {
     if (_state != YYRefreshStateRefreshing) {
         self.state = YYRefreshStateRefreshing;
-        [UIView animateWithDuration:_config.animationDurationFast animations:^{
-            [self parkVisible:YES];
-        } completion:^(BOOL finished) {
+        
+        //显示悬停刷新状态
+        if (_config.parkVisible) {
+            [UIView animateWithDuration:_config.animationDurationFast animations:^{
+                [self parkVisible:YES];
+            } completion:^(BOOL finished) {
+                [self executeRefreshingCallback];
+            }];
+        } else {
             [self executeRefreshingCallback];
-        }];
+        }
+        
     }
 }
 
 - (void)endRefresh {
     if (_state == YYRefreshStateRefreshing) {
-        [UIView animateWithDuration:_config.animationDurationFast animations:^{
-            [self parkVisible:NO];
-        } completion:^(BOOL finished) {
+        if (_config.parkVisible) {
+            [UIView animateWithDuration:_config.animationDurationFast animations:^{
+                [self parkVisible:NO];
+            } completion:^(BOOL finished) {
+                self.state = YYRefreshStateIdle;
+            }];
+        } else {
             self.state = YYRefreshStateIdle;
-        }];
+        }
     }
 }
 
@@ -250,22 +261,29 @@
 - (void)parkVisible:(BOOL)visible {
     UIEdgeInsets contentInset = self.scrollView.contentInset;
     // 增加滚动区域
-    CGFloat contentOffset = visible ? YYRefreshViewHeight : -YYRefreshViewHeight;
+    CGPoint contentOffset = self.scrollView.contentOffset;
+    CGFloat offset = visible ? YYRefreshViewHeight : -YYRefreshViewHeight;
     switch (_position) {
         case YYRefreshPositionTop:
-            contentInset.top += contentOffset;
+            contentInset.top += offset;
+            contentOffset.y = visible ? -_config.readyOffset : 0;
             break;
         case YYRefreshPositionBottom:
-            contentInset.bottom += contentOffset;
+            contentInset.bottom += offset;
             break;
         case YYRefreshPositionLeft:
-            contentInset.left += contentOffset;
+            contentInset.left += offset;
+            contentOffset.x = visible ? -_config.readyOffset : 0;
             break;
         case YYRefreshPositionRight:
-            contentInset.right += contentOffset;
+            contentInset.right += offset;
             break;
     }
+    
     // 设置滚动位置
+    self.scrollView.contentOffset = contentOffset;
+    
+    // 增加滚动区域
     self.scrollView.contentInset = contentInset;
 }
 

@@ -21,6 +21,7 @@
     config.readyOffset = YYRefreshReadyOffset;
     config.animationDurationFast = YYRefreshAnimationDurationFast;
     config.animationDurationSlow = YYRefreshAnimationDurationSlow;
+    config.parkVisible = YES;
     return config;
 }
 

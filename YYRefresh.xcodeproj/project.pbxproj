@@ -7,21 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE28CBF11D8E719C00FF7551 /* UIScrollView+YYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EE28CBE71D8E719C00FF7551 /* UIScrollView+YYRefresh.m */; };
+		EE28CBF21D8E719C00FF7551 /* YYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EE28CBE91D8E719C00FF7551 /* YYRefresh.m */; };
+		EE28CBF31D8E719C00FF7551 /* YYRefreshConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EE28CBEB1D8E719C00FF7551 /* YYRefreshConfig.m */; };
+		EE28CBF41D8E719C00FF7551 /* YYRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EE28CBED1D8E719C00FF7551 /* YYRefreshConst.m */; };
+		EE28CBF51D8E719C00FF7551 /* YYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE28CBEF1D8E719C00FF7551 /* YYRefreshView.m */; };
+		EE28CBF61D8E719C00FF7551 /* YYRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE28CBF01D8E719C00FF7551 /* YYRefresh.xcassets */; };
 		EE7E48511D7925FF00576A90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48501D7925FF00576A90 /* main.m */; };
 		EE7E48541D7925FF00576A90 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48531D7925FF00576A90 /* AppDelegate.m */; };
 		EE7E485A1D7925FF00576A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7E48581D7925FF00576A90 /* Main.storyboard */; };
 		EE7E485C1D7925FF00576A90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7E485B1D7925FF00576A90 /* Assets.xcassets */; };
 		EE7E485F1D7925FF00576A90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7E485D1D7925FF00576A90 /* LaunchScreen.storyboard */; };
 		EE7E48681D79267400576A90 /* PullRefreshDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48671D79267400576A90 /* PullRefreshDemo.m */; };
-		EE7E48771D7927BF00576A90 /* UIScrollView+YYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7E486D1D7927BF00576A90 /* UIScrollView+YYRefresh.m */; };
-		EE7E48781D7927BF00576A90 /* YYRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7E486F1D7927BF00576A90 /* YYRefresh.m */; };
-		EE7E48791D7927BF00576A90 /* YYRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7E48701D7927BF00576A90 /* YYRefresh.xcassets */; };
-		EE7E487A1D7927BF00576A90 /* YYRefreshConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48721D7927BF00576A90 /* YYRefreshConfig.m */; };
-		EE7E487B1D7927BF00576A90 /* YYRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48741D7927BF00576A90 /* YYRefreshConst.m */; };
-		EE7E487C1D7927BF00576A90 /* YYRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7E48761D7927BF00576A90 /* YYRefreshView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE28CBE61D8E719C00FF7551 /* UIScrollView+YYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YYRefresh.h"; sourceTree = "<group>"; };
+		EE28CBE71D8E719C00FF7551 /* UIScrollView+YYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YYRefresh.m"; sourceTree = "<group>"; };
+		EE28CBE81D8E719C00FF7551 /* YYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefresh.h; sourceTree = "<group>"; };
+		EE28CBE91D8E719C00FF7551 /* YYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefresh.m; sourceTree = "<group>"; };
+		EE28CBEA1D8E719C00FF7551 /* YYRefreshConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshConfig.h; sourceTree = "<group>"; };
+		EE28CBEB1D8E719C00FF7551 /* YYRefreshConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefreshConfig.m; sourceTree = "<group>"; };
+		EE28CBEC1D8E719C00FF7551 /* YYRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshConst.h; sourceTree = "<group>"; };
+		EE28CBED1D8E719C00FF7551 /* YYRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefreshConst.m; sourceTree = "<group>"; };
+		EE28CBEE1D8E719C00FF7551 /* YYRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshView.h; sourceTree = "<group>"; };
+		EE28CBEF1D8E719C00FF7551 /* YYRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefreshView.m; sourceTree = "<group>"; };
+		EE28CBF01D8E719C00FF7551 /* YYRefresh.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YYRefresh.xcassets; sourceTree = "<group>"; };
 		EE7E484C1D7925FF00576A90 /* YYRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7E48501D7925FF00576A90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE7E48521D7925FF00576A90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,17 +43,6 @@
 		EE7E48601D7925FF00576A90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE7E48661D79267400576A90 /* PullRefreshDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshDemo.h; sourceTree = "<group>"; };
 		EE7E48671D79267400576A90 /* PullRefreshDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshDemo.m; sourceTree = "<group>"; };
-		EE7E486C1D7927BF00576A90 /* UIScrollView+YYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YYRefresh.h"; sourceTree = "<group>"; };
-		EE7E486D1D7927BF00576A90 /* UIScrollView+YYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YYRefresh.m"; sourceTree = "<group>"; };
-		EE7E486E1D7927BF00576A90 /* YYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefresh.h; sourceTree = "<group>"; };
-		EE7E486F1D7927BF00576A90 /* YYRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefresh.m; sourceTree = "<group>"; };
-		EE7E48701D7927BF00576A90 /* YYRefresh.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YYRefresh.xcassets; sourceTree = "<group>"; };
-		EE7E48711D7927BF00576A90 /* YYRefreshConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshConfig.h; sourceTree = "<group>"; };
-		EE7E48721D7927BF00576A90 /* YYRefreshConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefreshConfig.m; sourceTree = "<group>"; };
-		EE7E48731D7927BF00576A90 /* YYRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshConst.h; sourceTree = "<group>"; };
-		EE7E48741D7927BF00576A90 /* YYRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefreshConst.m; sourceTree = "<group>"; };
-		EE7E48751D7927BF00576A90 /* YYRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYRefreshView.h; sourceTree = "<group>"; };
-		EE7E48761D7927BF00576A90 /* YYRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYRefreshView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,17 +100,17 @@
 		EE7E486B1D7927BF00576A90 /* YYRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				EE7E486C1D7927BF00576A90 /* UIScrollView+YYRefresh.h */,
-				EE7E486D1D7927BF00576A90 /* UIScrollView+YYRefresh.m */,
-				EE7E486E1D7927BF00576A90 /* YYRefresh.h */,
-				EE7E486F1D7927BF00576A90 /* YYRefresh.m */,
-				EE7E48701D7927BF00576A90 /* YYRefresh.xcassets */,
-				EE7E48711D7927BF00576A90 /* YYRefreshConfig.h */,
-				EE7E48721D7927BF00576A90 /* YYRefreshConfig.m */,
-				EE7E48731D7927BF00576A90 /* YYRefreshConst.h */,
-				EE7E48741D7927BF00576A90 /* YYRefreshConst.m */,
-				EE7E48751D7927BF00576A90 /* YYRefreshView.h */,
-				EE7E48761D7927BF00576A90 /* YYRefreshView.m */,
+				EE28CBE61D8E719C00FF7551 /* UIScrollView+YYRefresh.h */,
+				EE28CBE71D8E719C00FF7551 /* UIScrollView+YYRefresh.m */,
+				EE28CBE81D8E719C00FF7551 /* YYRefresh.h */,
+				EE28CBE91D8E719C00FF7551 /* YYRefresh.m */,
+				EE28CBEA1D8E719C00FF7551 /* YYRefreshConfig.h */,
+				EE28CBEB1D8E719C00FF7551 /* YYRefreshConfig.m */,
+				EE28CBEC1D8E719C00FF7551 /* YYRefreshConst.h */,
+				EE28CBED1D8E719C00FF7551 /* YYRefreshConst.m */,
+				EE28CBEE1D8E719C00FF7551 /* YYRefreshView.h */,
+				EE28CBEF1D8E719C00FF7551 /* YYRefreshView.m */,
+				EE28CBF01D8E719C00FF7551 /* YYRefresh.xcassets */,
 			);
 			path = YYRefresh;
 			sourceTree = "<group>";
@@ -141,11 +141,13 @@
 		EE7E48441D7925FF00576A90 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = huan;
 				TargetAttributes = {
 					EE7E484B1D7925FF00576A90 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = R6XRM4JTNP;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -175,7 +177,7 @@
 				EE7E485F1D7925FF00576A90 /* LaunchScreen.storyboard in Resources */,
 				EE7E485C1D7925FF00576A90 /* Assets.xcassets in Resources */,
 				EE7E485A1D7925FF00576A90 /* Main.storyboard in Resources */,
-				EE7E48791D7927BF00576A90 /* YYRefresh.xcassets in Resources */,
+				EE28CBF61D8E719C00FF7551 /* YYRefresh.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,14 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7E487B1D7927BF00576A90 /* YYRefreshConst.m in Sources */,
+				EE28CBF41D8E719C00FF7551 /* YYRefreshConst.m in Sources */,
 				EE7E48681D79267400576A90 /* PullRefreshDemo.m in Sources */,
 				EE7E48541D7925FF00576A90 /* AppDelegate.m in Sources */,
 				EE7E48511D7925FF00576A90 /* main.m in Sources */,
-				EE7E48781D7927BF00576A90 /* YYRefresh.m in Sources */,
-				EE7E48771D7927BF00576A90 /* UIScrollView+YYRefresh.m in Sources */,
-				EE7E487C1D7927BF00576A90 /* YYRefreshView.m in Sources */,
-				EE7E487A1D7927BF00576A90 /* YYRefreshConfig.m in Sources */,
+				EE28CBF21D8E719C00FF7551 /* YYRefresh.m in Sources */,
+				EE28CBF11D8E719C00FF7551 /* UIScrollView+YYRefresh.m in Sources */,
+				EE28CBF51D8E719C00FF7551 /* YYRefreshView.m in Sources */,
+				EE28CBF31D8E719C00FF7551 /* YYRefreshConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +235,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -278,8 +282,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -307,10 +313,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6XRM4JTNP;
 				INFOPLIST_FILE = YYRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.YYRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91edbf91-e48f-4c5d-9143-b71e74079063";
+				PROVISIONING_PROFILE_SPECIFIER = DevCommon;
 			};
 			name = Debug;
 		};
@@ -318,10 +328,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6XRM4JTNP;
 				INFOPLIST_FILE = YYRefresh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.YYRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91edbf91-e48f-4c5d-9143-b71e74079063";
+				PROVISIONING_PROFILE_SPECIFIER = DevCommon;
 			};
 			name = Release;
 		};

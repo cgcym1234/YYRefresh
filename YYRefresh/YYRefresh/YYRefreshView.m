@@ -103,7 +103,7 @@
 - (void)showRedayWithConfig:(YYRefreshConfig *)config animated:(BOOL)animated {
     
     void (^action)(void) = ^{
-        _imageView.transform = CGAffineTransformRotate(_imageView.transform, DegreesToRadians(180.1));
+        _imageView.transform = CGAffineTransformRotate(_imageView.transform, DegreesToRadians(180));
     };
     
     if (animated) {
@@ -134,8 +134,7 @@
 - (void)setCurrentText:(NSString *)currentText {
     _currentText = currentText;
     _textLabel.text = currentText;
-    [_textLabel sizeToFit];
-    [self layoutIfNeeded];
+    [self updateLocation];
 }
 
 - (void)setPostion:(YYRefreshPosition)postion {
