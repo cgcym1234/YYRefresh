@@ -86,7 +86,7 @@
 
 - (void)showIdleWithConfig:(YYRefreshConfig *)config animated:(BOOL)animated {
     void (^action)(void) = ^{
-        _imageView.transform = CGAffineTransformIdentity;
+        self.imageView.transform = CGAffineTransformIdentity;
     };
     
     if (animated) {
@@ -103,7 +103,7 @@
 - (void)showRedayWithConfig:(YYRefreshConfig *)config animated:(BOOL)animated {
     
     void (^action)(void) = ^{
-        _imageView.transform = CGAffineTransformRotate(_imageView.transform, DegreesToRadians(180));
+        self.imageView.transform = CGAffineTransformRotate(self.imageView.transform, DegreesToRadians(180));
     };
     
     if (animated) {

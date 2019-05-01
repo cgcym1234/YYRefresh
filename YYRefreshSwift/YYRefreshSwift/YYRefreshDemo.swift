@@ -41,10 +41,17 @@ class YYRefreshDemo: UIViewController {
         scrollView.contentSize = view.bounds.size
         view.addSubview(scrollView)
         self.scrollView = scrollView
+        
+        let label = UILabel()
+        label.text = "上下左右拖动"
+        label.sizeToFit()
+        label.textColor = .orange
+        label.center = scrollView.center
+        scrollView.addSubview(label)
     }
     
     func addRefresh() {
-        var config = YYRefreshConfig()
+        var config = YYRefresh.Config()
         config.textIdle = "下拉返回商品详情"
         config.textReady = "释放返回商品详情"
         
