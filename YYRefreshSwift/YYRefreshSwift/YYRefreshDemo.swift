@@ -60,28 +60,28 @@ class YYRefreshDemo: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: deadlineTime, execute: {
                 refresh.endRefresh()
             })
-            }
+        }
         
         scrollView.addYYRefresh(position: .left, config: config) { (refresh) in
             let deadlineTime = DispatchTime.now() + .seconds(2)
             DispatchQueue.main.asyncAfter(deadline: deadlineTime, execute: {
                 refresh.endRefresh()
             })
-            }
+        }
         
         scrollView.addYYRefresh(position: .bottom) { (refresh) in
             let deadlineTime = DispatchTime.now() + .seconds(2)
             DispatchQueue.main.asyncAfter(deadline: deadlineTime, execute: {
                 refresh.endRefresh()
             })
-            }
+        }
         
         scrollView.addYYRefresh(position: .right) { (refresh) in
             let deadlineTime = DispatchTime.now() + .seconds(2)
             DispatchQueue.main.asyncAfter(deadline: deadlineTime, execute: {
                 refresh.endRefresh()
             })
-            }
+        }
     }
     
     
