@@ -146,8 +146,8 @@
 				TargetAttributes = {
 					EE7E484B1D7925FF00576A90 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = R6XRM4JTNP;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 5PK7JV6E62;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -331,14 +331,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R6XRM4JTNP;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PK7JV6E62;
 				INFOPLIST_FILE = YYRefresh/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.YYRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "91edbf91-e48f-4c5d-9143-b71e74079063";
-				PROVISIONING_PROFILE_SPECIFIER = DevCommon;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -346,14 +348,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = R6XRM4JTNP;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PK7JV6E62;
 				INFOPLIST_FILE = YYRefresh/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.YYRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "91edbf91-e48f-4c5d-9143-b71e74079063";
-				PROVISIONING_PROFILE_SPECIFIER = DevCommon;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
