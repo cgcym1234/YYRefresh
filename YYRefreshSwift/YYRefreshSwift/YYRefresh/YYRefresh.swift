@@ -169,13 +169,11 @@ extension YYRefresh {
 
         scrollView = newSuperview
         addObservers()
-        DispatchQueue.main.async {
-            self.layoutViews()
-        }
     }
 
     public override func layoutSubviews() {
         super.layoutSubviews()
+        layoutViews()
     }
 }
 
@@ -302,7 +300,8 @@ private extension YYRefresh {
             x = max(scrollView.contentSize.width, scrollView.bounds.width) + viewHeight
             viewWidth = scrollView.bounds.height
         }
-        
+        transform = .identity
+        _setAnchorPointFixedFrame(.init(x: 0.5, y: 0.5))
         frame = CGRect(x: x, y: y, width: viewWidth, height: viewHeight)
         refreshView.view.frame = bounds
 
