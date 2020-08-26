@@ -131,6 +131,8 @@
         [self setAnchorPoint:CGPointMake(0, 0) forView:self];
         self.transform = CGAffineTransformRotate(self.transform, DegreesToRadians(90));
     }
+    NSLog(@"%@", NSStringFromCGRect(self.frame));
+    NSLog(@"%@", NSStringFromCGRect(self.bounds));
 }
 
 - (void)updatePositionWhenContentsSizeIsChanged:(NSDictionary *)change {
