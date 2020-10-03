@@ -1,16 +1,16 @@
 PODS:
-  - YYRefresh (1.0.0)
+  - YYRefreshView (1.0.0)
 
 DEPENDENCIES:
-  - YYRefresh (from `../`)
+  - YYRefreshView (from `../`)
 
 EXTERNAL SOURCES:
-  YYRefresh:
+  YYRefreshView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YYRefresh: fa877b9749b8d47b8c978a54add0d94891ebea54
+  YYRefreshView: fb727ae6dc7bb17264380808ccd288fcfdd7ec1f
 
-PODFILE CHECKSUM: e7f268e552762d1a0ff15e00e6faec9b591750e9
+PODFILE CHECKSUM: 475f5fc3beaaa372d6452a1d4d8ebd438a88e254
 
 COCOAPODS: 1.9.1

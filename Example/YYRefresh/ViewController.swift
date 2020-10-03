@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import YYRefresh
+import YYRefreshView
 
 class ViewController: UIViewController {
     var scrollView: UIScrollView!

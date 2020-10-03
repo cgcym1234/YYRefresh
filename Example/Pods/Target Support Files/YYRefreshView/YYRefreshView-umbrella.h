@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double YYRefreshVersionNumber;
-FOUNDATION_EXPORT const unsigned char YYRefreshVersionString[];
+FOUNDATION_EXPORT double YYRefreshViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char YYRefreshViewVersionString[];
 

@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## YYRefresh
+## YYRefreshView
 
 Copyright (c) 2020 cgcym1234 <cgcym1234@163.com>
 

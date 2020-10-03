@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-    s.name             = 'YYRefresh'
+    s.name             = 'YYRefreshView'
     s.version          = '1.0.0'
     s.summary          = 'Four directions refresh'
     

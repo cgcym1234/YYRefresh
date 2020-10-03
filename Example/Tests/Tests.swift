@@ -1,5 +1,5 @@
 import XCTest
-import YYRefresh
+import YYRefreshView
 
 class Tests: XCTestCase {
     

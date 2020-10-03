@@ -41,7 +41,7 @@
 		607FACE51AFB9204008FA782 /* YYRefresh_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYRefresh_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7F78D82AC600133581E60F41 /* YYRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YYRefresh.podspec; path = ../YYRefresh.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7F78D82AC600133581E60F41 /* YYRefreshView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YYRefreshView.podspec; path = ../YYRefreshView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		90CD30DF29BCFE3BE8D3EACF /* Pods_YYRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C573DE878302DC0D69FCEF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BF444BE1AFBD5BB919E84212 /* Pods-YYRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYRefresh_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YYRefresh_Tests/Pods-YYRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				7F78D82AC600133581E60F41 /* YYRefresh.podspec */,
+				7F78D82AC600133581E60F41 /* YYRefreshView.podspec */,
 				99C573DE878302DC0D69FCEF /* README.md */,
 				19EED02D2434D52E0DBA24E9 /* LICENSE */,
 			);
@@ -290,11 +290,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YYRefresh_Example/Pods-YYRefresh_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YYRefresh/YYRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/YYRefreshView/YYRefreshView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYRefreshView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
