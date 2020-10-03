@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YYRefresh_Example' do
+  pod 'YYRefresh', :path => '../'
+
+  target 'YYRefresh_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
