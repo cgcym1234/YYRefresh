@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
     s.name             = 'YYRefresh'
     s.version          = '1.0.0'
-    s.summary          = 'Refresh control support four directions'
+    s.summary          = 'Four directions refresh'
     
     # This description is used to generate tags and improve search results.
     #   * Think: What does it do? Why did you write it? What is the focus?
