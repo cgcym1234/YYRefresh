@@ -19,7 +19,7 @@
 ## 安装
 
 ```
-pod 'YYRefresh'
+pod 'YYRefreshView'
 ```
 
 ## 使用
