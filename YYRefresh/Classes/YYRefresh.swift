@@ -24,7 +24,7 @@ public final class YYRefresh: UIView {
         }
     }
 
-    public var state: YYRefresh.State = .idle {
+    public private(set) var state: YYRefresh.State = .idle {
         willSet {
             refreshView.show(newValue, config: config, animated: true)
         }
@@ -173,6 +173,8 @@ extension YYRefresh {
 
     public override func layoutSubviews() {
         super.layoutSubviews()
+        guard let superview = superview,
+            superview.bounds.width != bounds.width else { return }
         layoutViews()
     }
 }
