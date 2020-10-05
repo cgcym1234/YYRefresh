@@ -284,7 +284,7 @@ private extension YYRefresh {
     func layoutViews() {
         var x = CGFloat(0)
         var y = CGFloat(0)
-        var viewWidth = scrollView.bounds.width
+        let viewWidth = scrollView.bounds.width
         let viewHeight = config.viewHeight
         switch position {
         case .top:
@@ -295,10 +295,10 @@ private extension YYRefresh {
             /// 在左右方向加刷新控件时，采用的方式是，将refreshView顺时针旋转90度，
             /// 旋转选择的是左上角那个点，所以这里x的要额外加refreshView的高度
             x = -viewHeight + viewHeight
-            viewWidth = scrollView.bounds.height
+            y = (scrollView.bounds.height - viewWidth) / 2
         case .right:
             x = max(scrollView.contentSize.width, scrollView.bounds.width) + viewHeight
-            viewWidth = scrollView.bounds.height
+            y = (scrollView.bounds.height - viewWidth) / 2
         }
         transform = .identity
         _setAnchorPointFixedFrame(.init(x: 0.5, y: 0.5))
